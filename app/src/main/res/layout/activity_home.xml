@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".ActivityHome">
 
     <TextView
+        android:id="@+id/txUserName"
+        style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="User Full Name"
         android:layout_gravity="center"
         android:gravity="center"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:id="@+id/txUserName"/>
+        android:text="User Full Name" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_marginTop="20dp"
+        android:id="@+id/btSignOut"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Out Account"
-        android:id="@+id/btSignOut"/>
+        android:layout_marginTop="20dp"
+        android:text="Sign Out Account" />
 
 </LinearLayout>
